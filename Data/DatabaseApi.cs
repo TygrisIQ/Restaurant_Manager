@@ -19,7 +19,7 @@ namespace Restaurant_Manager.Data
 
         public static Result<T> Success(T value) => new(true, value, ErrorCode.None, null);
         public static Result<T> Fail(ErrorCode code, string message) => new(false, default, code, message);
-
+        
         public override string ToString() =>
             Ok ? $"Success({Value})" : $"Fail({Code}: {Message})";
     }
@@ -29,6 +29,8 @@ namespace Restaurant_Manager.Data
     //long Db class and avoiding tinkering with it
     public static class DatabaseApi
     {
+
+        //Ensure Database is initialized, return true if yes false if not initialized
         //Makes sure the database is initialized (started)
         //call this before making any other calls to the database
         public static async Task<Result<bool>> EnsureInitialized()
