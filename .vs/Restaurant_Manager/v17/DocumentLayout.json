@@ -7,12 +7,40 @@
       "RelativeMoniker": "D:0:0:{8FD1BF80-D835-4155-925F-DDD1A4B70121}|Restaurant_Manager.csproj|solutionrelative:data\\db.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8FD1BF80-D835-4155-925F-DDD1A4B70121}|Restaurant_Manager.csproj|c:\\users\\tyty\\source\\repos\\restaurant_manager\\utility\\databaseutility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8FD1BF80-D835-4155-925F-DDD1A4B70121}|Restaurant_Manager.csproj|solutionrelative:utility\\databaseutility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8FD1BF80-D835-4155-925F-DDD1A4B70121}|Restaurant_Manager.csproj|c:\\users\\tyty\\source\\repos\\restaurant_manager\\data\\databaseapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FD1BF80-D835-4155-925F-DDD1A4B70121}|Restaurant_Manager.csproj|solutionrelative:data\\databaseapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FD1BF80-D835-4155-925F-DDD1A4B70121}|Restaurant_Manager.csproj|c:\\users\\tyty\\source\\repos\\restaurant_manager\\components\\pages\\reservations.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8FD1BF80-D835-4155-925F-DDD1A4B70121}|Restaurant_Manager.csproj|solutionrelative:components\\pages\\reservations.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FD1BF80-D835-4155-925F-DDD1A4B70121}|Restaurant_Manager.csproj|c:\\users\\tyty\\source\\repos\\restaurant_manager\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8FD1BF80-D835-4155-925F-DDD1A4B70121}|Restaurant_Manager.csproj|solutionrelative:components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FD1BF80-D835-4155-925F-DDD1A4B70121}|Restaurant_Manager.csproj|c:\\users\\tyty\\source\\repos\\restaurant_manager\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8FD1BF80-D835-4155-925F-DDD1A4B70121}|Restaurant_Manager.csproj|solutionrelative:components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FD1BF80-D835-4155-925F-DDD1A4B70121}|Restaurant_Manager.csproj|c:\\users\\tyty\\source\\repos\\restaurant_manager\\model\\reservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FD1BF80-D835-4155-925F-DDD1A4B70121}|Restaurant_Manager.csproj|solutionrelative:model\\reservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8FD1BF80-D835-4155-925F-DDD1A4B70121}|Restaurant_Manager.csproj|c:\\users\\tyty\\source\\repos\\restaurant_manager\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8FD1BF80-D835-4155-925F-DDD1A4B70121}|Restaurant_Manager.csproj|solutionrelative:mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FD1BF80-D835-4155-925F-DDD1A4B70121}|Restaurant_Manager.csproj|c:\\users\\tyty\\source\\repos\\restaurant_manager\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FD1BF80-D835-4155-925F-DDD1A4B70121}|Restaurant_Manager.csproj|solutionrelative:mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FD1BF80-D835-4155-925F-DDD1A4B70121}|Restaurant_Manager.csproj|c:\\users\\tyty\\source\\repos\\restaurant_manager\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FD1BF80-D835-4155-925F-DDD1A4B70121}|Restaurant_Manager.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FD1BF80-D835-4155-925F-DDD1A4B70121}|Restaurant_Manager.csproj|c:\\users\\tyty\\source\\repos\\restaurant_manager\\utility\\databaseutility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FD1BF80-D835-4155-925F-DDD1A4B70121}|Restaurant_Manager.csproj|solutionrelative:utility\\databaseutility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8FD1BF80-D835-4155-925F-DDD1A4B70121}|Restaurant_Manager.csproj|c:\\users\\tyty\\source\\repos\\restaurant_manager\\model\\enums\\reservationstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -21,10 +49,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{8FD1BF80-D835-4155-925F-DDD1A4B70121}|Restaurant_Manager.csproj|c:\\users\\tyty\\source\\repos\\restaurant_manager\\model\\table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8FD1BF80-D835-4155-925F-DDD1A4B70121}|Restaurant_Manager.csproj|solutionrelative:model\\table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8FD1BF80-D835-4155-925F-DDD1A4B70121}|Restaurant_Manager.csproj|c:\\users\\tyty\\source\\repos\\restaurant_manager\\model\\reservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8FD1BF80-D835-4155-925F-DDD1A4B70121}|Restaurant_Manager.csproj|solutionrelative:model\\reservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8FD1BF80-D835-4155-925F-DDD1A4B70121}|Restaurant_Manager.csproj|c:\\users\\tyty\\source\\repos\\restaurant_manager\\model\\menuentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -41,10 +65,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{8FD1BF80-D835-4155-925F-DDD1A4B70121}|Restaurant_Manager.csproj|c:\\users\\tyty\\source\\repos\\restaurant_manager\\model\\enums\\paymenttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8FD1BF80-D835-4155-925F-DDD1A4B70121}|Restaurant_Manager.csproj|solutionrelative:model\\enums\\paymenttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8FD1BF80-D835-4155-925F-DDD1A4B70121}|Restaurant_Manager.csproj|c:\\users\\tyty\\source\\repos\\restaurant_manager\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8FD1BF80-D835-4155-925F-DDD1A4B70121}|Restaurant_Manager.csproj|solutionrelative:components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,32 +74,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "MauiProgram.cs",
-              "DocumentMoniker": "C:\\Users\\tyty\\source\\repos\\Restaurant_Manager\\MauiProgram.cs",
-              "RelativeDocumentMoniker": "MauiProgram.cs",
-              "ToolTip": "C:\\Users\\tyty\\source\\repos\\Restaurant_Manager\\MauiProgram.cs",
-              "RelativeToolTip": "MauiProgram.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-13T03:46:25.874Z",
+              "Title": "Reservations.razor",
+              "DocumentMoniker": "C:\\Users\\tyty\\source\\repos\\Restaurant_Manager\\Components\\Pages\\Reservations.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\Reservations.razor",
+              "ToolTip": "C:\\Users\\tyty\\source\\repos\\Restaurant_Manager\\Components\\Pages\\Reservations.razor",
+              "RelativeToolTip": "Components\\Pages\\Reservations.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-13T06:42:35.249Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "DatabaseUtility.cs",
-              "DocumentMoniker": "C:\\Users\\tyty\\source\\repos\\Restaurant_Manager\\Utility\\DatabaseUtility.cs",
-              "RelativeDocumentMoniker": "Utility\\DatabaseUtility.cs",
-              "ToolTip": "C:\\Users\\tyty\\source\\repos\\Restaurant_Manager\\Utility\\DatabaseUtility.cs",
-              "RelativeToolTip": "Utility\\DatabaseUtility.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAADwvxsAAAAvAAAAAAAAAA==",
+              "Title": "DatabaseApi.cs",
+              "DocumentMoniker": "C:\\Users\\tyty\\source\\repos\\Restaurant_Manager\\Data\\DatabaseApi.cs",
+              "RelativeDocumentMoniker": "Data\\DatabaseApi.cs",
+              "ToolTip": "C:\\Users\\tyty\\source\\repos\\Restaurant_Manager\\Data\\DatabaseApi.cs",
+              "RelativeToolTip": "Data\\DatabaseApi.cs",
+              "ViewState": "AgIAAH0AAAAAAAAAAAAwwKAAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-13T03:48:02.592Z",
+              "WhenOpened": "2025-08-13T05:05:56.367Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Users\\tyty\\source\\repos\\Restaurant_Manager\\Components\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "Components\\Layout\\NavMenu.razor",
+              "ToolTip": "C:\\Users\\tyty\\source\\repos\\Restaurant_Manager\\Components\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "Components\\Layout\\NavMenu.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAiwBsAAABgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-13T06:46:38Z",
               "EditorCaption": ""
             },
             {
@@ -90,14 +123,65 @@
               "RelativeDocumentMoniker": "Data\\Db.cs",
               "ToolTip": "C:\\Users\\tyty\\source\\repos\\Restaurant_Manager\\Data\\Db.cs",
               "RelativeToolTip": "Data\\Db.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAkwAgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAMEAAAAAAAAAAAAAAMwAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-13T02:04:17.708Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\tyty\\source\\repos\\Restaurant_Manager\\App.xaml.cs",
+              "RelativeDocumentMoniker": "App.xaml.cs",
+              "ToolTip": "C:\\Users\\tyty\\source\\repos\\Restaurant_Manager\\App.xaml.cs",
+              "RelativeToolTip": "App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T05:41:54.481Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\tyty\\source\\repos\\Restaurant_Manager\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "MainPage.xaml.cs",
+              "ToolTip": "C:\\Users\\tyty\\source\\repos\\Restaurant_Manager\\MainPage.xaml.cs",
+              "RelativeToolTip": "MainPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T05:46:21.81Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Home.razor",
+              "DocumentMoniker": "C:\\Users\\tyty\\source\\repos\\Restaurant_Manager\\Components\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\Home.razor",
+              "ToolTip": "C:\\Users\\tyty\\source\\repos\\Restaurant_Manager\\Components\\Pages\\Home.razor",
+              "RelativeToolTip": "Components\\Pages\\Home.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-13T01:37:35.251Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DatabaseUtility.cs",
+              "DocumentMoniker": "C:\\Users\\tyty\\source\\repos\\Restaurant_Manager\\Utility\\DatabaseUtility.cs",
+              "RelativeDocumentMoniker": "Utility\\DatabaseUtility.cs",
+              "ToolTip": "C:\\Users\\tyty\\source\\repos\\Restaurant_Manager\\Utility\\DatabaseUtility.cs",
+              "RelativeToolTip": "Utility\\DatabaseUtility.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAADwvxsAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T03:48:02.592Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "ReservationStatus.cs",
               "DocumentMoniker": "C:\\Users\\tyty\\source\\repos\\Restaurant_Manager\\Model\\Enums\\ReservationStatus.cs",
               "RelativeDocumentMoniker": "Model\\Enums\\ReservationStatus.cs",
@@ -105,12 +189,11 @@
               "RelativeToolTip": "Model\\Enums\\ReservationStatus.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-13T02:01:38.414Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-13T02:01:38.414Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 11,
               "Title": "Table.cs",
               "DocumentMoniker": "C:\\Users\\tyty\\source\\repos\\Restaurant_Manager\\Model\\Table.cs",
               "RelativeDocumentMoniker": "Model\\Table.cs",
@@ -118,8 +201,7 @@
               "RelativeToolTip": "Model\\Table.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-13T01:57:30.858Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-13T01:57:30.858Z"
             },
             {
               "$type": "Document",
@@ -129,14 +211,14 @@
               "RelativeDocumentMoniker": "Model\\Reservation.cs",
               "ToolTip": "C:\\Users\\tyty\\source\\repos\\Restaurant_Manager\\Model\\Reservation.cs",
               "RelativeToolTip": "Model\\Reservation.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAIwBUAAABaAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-13T01:56:38.578Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 12,
               "Title": "MenuEntry.cs",
               "DocumentMoniker": "C:\\Users\\tyty\\source\\repos\\Restaurant_Manager\\Model\\MenuEntry.cs",
               "RelativeDocumentMoniker": "Model\\MenuEntry.cs",
@@ -144,12 +226,11 @@
               "RelativeToolTip": "Model\\MenuEntry.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-13T01:47:12.153Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-13T01:47:12.153Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 14,
               "Title": "MenuEntryType.cs",
               "DocumentMoniker": "C:\\Users\\tyty\\source\\repos\\Restaurant_Manager\\Model\\Enums\\MenuEntryType.cs",
               "RelativeDocumentMoniker": "Model\\Enums\\MenuEntryType.cs",
@@ -157,12 +238,11 @@
               "RelativeToolTip": "Model\\Enums\\MenuEntryType.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-13T01:46:00.089Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-13T01:46:00.089Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 15,
               "Title": "PaymentType.cs",
               "DocumentMoniker": "C:\\Users\\tyty\\source\\repos\\Restaurant_Manager\\Model\\Enums\\PaymentType.cs",
               "RelativeDocumentMoniker": "Model\\Enums\\PaymentType.cs",
@@ -170,12 +250,11 @@
               "RelativeToolTip": "Model\\Enums\\PaymentType.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-13T01:43:53.283Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-13T01:43:53.283Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 13,
               "Title": "Employee.cs",
               "DocumentMoniker": "C:\\Users\\tyty\\source\\repos\\Restaurant_Manager\\Model\\Employee.cs",
               "RelativeDocumentMoniker": "Model\\Employee.cs",
@@ -183,20 +262,19 @@
               "RelativeToolTip": "Model\\Employee.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAgwAsAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-13T01:43:33.622Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-13T01:43:33.622Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Home.razor",
-              "DocumentMoniker": "C:\\Users\\tyty\\source\\repos\\Restaurant_Manager\\Components\\Pages\\Home.razor",
-              "RelativeDocumentMoniker": "Components\\Pages\\Home.razor",
-              "ToolTip": "C:\\Users\\tyty\\source\\repos\\Restaurant_Manager\\Components\\Pages\\Home.razor",
-              "RelativeToolTip": "Components\\Pages\\Home.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-13T01:37:35.251Z",
+              "DocumentIndex": 6,
+              "Title": "MauiProgram.cs",
+              "DocumentMoniker": "C:\\Users\\tyty\\source\\repos\\Restaurant_Manager\\MauiProgram.cs",
+              "RelativeDocumentMoniker": "MauiProgram.cs",
+              "ToolTip": "C:\\Users\\tyty\\source\\repos\\Restaurant_Manager\\MauiProgram.cs",
+              "RelativeToolTip": "MauiProgram.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAYwBkAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T03:46:25.874Z",
               "EditorCaption": ""
             }
           ]

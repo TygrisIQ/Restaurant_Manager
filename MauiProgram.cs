@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
+using Restaurant_Manager.Data;
 
 namespace Restaurant_Manager
 {
@@ -22,6 +23,7 @@ namespace Restaurant_Manager
 #endif
 
             //database check
+            _ = Task.Run(Db.Initialize);
             _ = Task.Run(Utility.DatabaseUtility.DbTest);
             return builder.Build();
         }

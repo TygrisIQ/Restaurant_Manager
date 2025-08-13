@@ -1,0 +1,34 @@
+﻿@page "/reservations"
+@using Restaurant_Manager.Data
+@using Restaurant_Manager.Model
+<h3>Reservation Management</h3>
+
+@code {
+    DateTime selectedDate = DateTime.Today;
+    TimeSpan selectedTime = new TimeSpan(18, 30, 0);
+    int durationMinutes = 90;
+
+    async Task CreateReservation()
+    {
+        //comined the date with time to create a full
+        //DateTime Object 
+        // 2025-08-13 18:30:00
+        DateTime startLocal = selectedDate.Date + selectedTime;
+        //turns 90 minutes into 1 hour 30 minutes 1:30:00
+        TimeSpan duration = TimeSpan.FromMinutes(durationMinutes);
+
+        var res = await DatabaseApi.CreateReservation(
+            tableId: 1,
+            name: "Johnny",
+            startLocal: startLocal,
+            duration: duration,
+            partySize: 4
+
+        );
+
+        if (!res.Ok)
+        {
+            Console.WriteLine($"Error: {res.Code} - {res.Message}");
+        }
+    }
+}
