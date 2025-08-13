@@ -97,7 +97,7 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <FileLength>5481</FileLength>
-      <LastWriteTime>Wed, 13 Aug 2025 01:37:41 GMT</LastWriteTime>
+      <LastWriteTime>Wed, 13 Aug 2025 07:42:28 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Restaurant_Manager.styles.css'))</OriginalItemSpec>
     </StaticWebAsset>
   </ItemGroup>

@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Restaurant_Manager.Model.Enums
+﻿namespace Restaurant_Manager.Model.Enums
 {
+
+    // Meant to describe the current reserve state of a table
     public enum ReservationStatus
     {
         Booked, Free, Canceled

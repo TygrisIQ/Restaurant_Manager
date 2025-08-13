@@ -4,6 +4,8 @@ namespace Restaurant_Manager.Model
 {
     public class Reservation
     {
+        //models a reservation object
+        //uses table id to refer to a specific table
         [PrimaryKey, AutoIncrement] public int Id { get; set; }
 
         [NotNull] public int TableId { get; set; }

@@ -1,11 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using SQLite;
+﻿using SQLite;
 namespace Restaurant_Manager.Model
 {
+
+    //THis class models an employee
+    //listing the attribute saved by the restaurant about each employee to
+    //ease management
     public class Employee
     {
         [PrimaryKey, AutoIncrement] public int Id { get; set; }

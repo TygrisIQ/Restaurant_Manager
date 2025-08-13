@@ -2,7 +2,7 @@ wwwroot\css\app.css
 wwwroot\css\bootstrap\bootstrap.min.css
 wwwroot\css\bootstrap\bootstrap.min.css.map
 wwwroot\index.html
-C:\Users\tyty\source\repos\Restaurant_Manager\wwwroot\css\app.css
-C:\Users\tyty\source\repos\Restaurant_Manager\wwwroot\css\bootstrap\bootstrap.min.css
-C:\Users\tyty\source\repos\Restaurant_Manager\wwwroot\css\bootstrap\bootstrap.min.css.map
 C:\Users\tyty\source\repos\Restaurant_Manager\wwwroot\index.html
+C:\Users\tyty\source\repos\Restaurant_Manager\wwwroot\css\bootstrap\bootstrap.min.css.map
+C:\Users\tyty\source\repos\Restaurant_Manager\wwwroot\css\bootstrap\bootstrap.min.css
+C:\Users\tyty\source\repos\Restaurant_Manager\wwwroot\css\app.css

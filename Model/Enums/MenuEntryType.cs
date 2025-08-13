@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Restaurant_Manager.Model.Enums
+﻿namespace Restaurant_Manager.Model.Enums
 {
+    //Types of dishes offered by the restaurant
     public enum MenuEntryType
     {
         MainDish,

@@ -24,7 +24,7 @@ namespace Restaurant_Manager
 
             //database check
             _ = Task.Run(Db.Initialize);
-            _ = Task.Run(Utility.DatabaseUtility.DbTest);
+            //_ = Task.Run(Utility.DatabaseUtility.DbTest);
             return builder.Build();
         }
     }

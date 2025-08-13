@@ -1,19 +1,27 @@
 ﻿using Restaurant_Manager.Model;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Restaurant_Manager.Data;
 
 namespace Restaurant_Manager.Data
 {
     public enum ErrorCode { None, NotFound, Conflict, Invalid, Db}
+    
 
-    public readonly record struct Result<T>(bool Ok, T? Value, ErrorCode Code = ErrorCode.None, string? Message = null)
+    public sealed class Result<T>
     {
-        public static Result<T> Success(T v) => new(true, v);
-        public static Result<T> Fail(ErrorCode c, string m) => new(false, default, c, m);
+        public bool Ok { get; }
+        public T? Value { get; }
+        public ErrorCode Code { get; }
+        public string? Message { get; }
+
+        private Result(bool ok, T? value, ErrorCode code, string? message)
+        {
+            Ok = ok; Value = value; Code = code; Message = message;
+        }
+
+        public static Result<T> Success(T value) => new(true, value, ErrorCode.None, null);
+        public static Result<T> Fail(ErrorCode code, string message) => new(false, default, code, message);
+
+        public override string ToString() =>
+            Ok ? $"Success({Value})" : $"Fail({Code}: {Message})";
     }
     //This class was made to make the job for the ui teammates easier
     //the idea is for them to call oneliners and get the result
@@ -156,6 +164,9 @@ namespace Restaurant_Manager.Data
             catch (Exception ex) { return Result<List<Employee>>.Fail(ErrorCode.Db, ex.Message); }
         }
         //Create a new employee
+        //this method excepts to receive an employee object to save it to database
+        //in case of an error,
+        //returns an ArgumentException if caught by Db.SaveEmployeeAsync otherwise throws a generic exception
         public static async Task<Result<Employee>> SaveEmployee(Employee e)
         {
             try { await Db.SaveEmployeeAsync(e); return Result<Employee>.Success(e); }
