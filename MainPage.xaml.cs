@@ -1,4 +1,6 @@
-﻿namespace Restaurant_Manager
+﻿using Restaurant_Manager.Data;
+
+namespace Restaurant_Manager
 {
     public partial class MainPage : ContentPage
     {
@@ -6,5 +8,7 @@
         {
             InitializeComponent();
         }
+
+       
     }
 }

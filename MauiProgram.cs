@@ -21,6 +21,8 @@ namespace Restaurant_Manager
     		builder.Logging.AddDebug();
 #endif
 
+            //database check
+            _ = Task.Run(Utility.DatabaseUtility.DbTest);
             return builder.Build();
         }
     }
