@@ -1,0 +1,45 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\tyty\\source\\repos\\Restaurant_Manager\\obj\\Debug\\net9.0-android\\scopedcss\\bundle\\Restaurant_Manager.styles.css",
+      "PackagePath": "staticwebassets\\Restaurant_Manager.styles.css"
+    },
+    {
+      "Id": "C:\\Users\\tyty\\source\\repos\\Restaurant_Manager\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\tyty\\source\\repos\\Restaurant_Manager\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\tyty\\source\\repos\\Restaurant_Manager\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\tyty\\source\\repos\\Restaurant_Manager\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0-android\\staticwebassets\\msbuild.Restaurant_Manager.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0-android\\staticwebassets\\msbuild.Restaurant_Manager.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0-android\\staticwebassets\\msbuild.build.Restaurant_Manager.props",
+      "PackagePath": "build\\Restaurant_Manager.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0-android\\staticwebassets\\msbuild.buildMultiTargeting.Restaurant_Manager.props",
+      "PackagePath": "buildMultiTargeting\\Restaurant_Manager.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0-android\\staticwebassets\\msbuild.buildTransitive.Restaurant_Manager.props",
+      "PackagePath": "buildTransitive\\Restaurant_Manager.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
