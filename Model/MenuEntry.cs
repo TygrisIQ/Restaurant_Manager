@@ -1,12 +1,12 @@
 ﻿using Restaurant_Manager.Model.Enums;
+using Restaurant_Manager.Model.Shared;
 using SQLite;
 namespace Restaurant_Manager.Model
 {
     // This models the menu items offered by the restaurant
     
-    public class MenuEntry
+    public class MenuEntry : BaseModel, IHasName
     {
-        [PrimaryKey, AutoIncrement] public int Id { get; set; }
 
         [NotNull] public string Name { get; set; } = "";
         public string? Description { get; set; }

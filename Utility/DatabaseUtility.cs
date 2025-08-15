@@ -8,6 +8,10 @@ using System.Threading.Tasks;
 
 namespace Restaurant_Manager.Utility
 {
+    /// <summary>
+    /// THIS CLASS IS A SANITY CHECK CLASS I USED DURING DEVELOPMENT TO TEST THE DATABSE, IT WAS INSPIRED BY CODE ON GITHUB
+    /// ITS NOT USED ANYMORE AND ONLY USED DURING DEVELOPMENT
+    /// </summary>
     public static class DatabaseUtility
     {
         public static async Task DbTest()

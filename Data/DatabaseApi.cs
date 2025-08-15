@@ -1,42 +1,18 @@
 ﻿using Restaurant_Manager.Model;
-
 namespace Restaurant_Manager.Data
 {
-    public enum ErrorCode { None, NotFound, Conflict, Invalid, Db}
-    
-
-    public sealed class Result<T>
-    {
-        public bool Ok { get; }
-        public T? Value { get; }
-        public ErrorCode Code { get; }
-        public string? Message { get; }
-
-        private Result(bool ok, T? value, ErrorCode code, string? message)
-        {
-            Ok = ok; Value = value; Code = code; Message = message;
-        }
-
-        public static Result<T> Success(T value) => new(true, value, ErrorCode.None, null);
-        public static Result<T> Fail(ErrorCode code, string message) => new(false, default, code, message);
-        
-        public override string ToString() =>
-            Ok ? $"Success({Value})" : $"Fail({Code}: {Message})";
-    }
     //This class was made to make the job for the ui teammates easier
     //the idea is for them to call oneliners and get the result
     //which saves them from reading the
     //long Db class and avoiding tinkering with it
     public static class DatabaseApi
     {
-
-        //Ensure Database is initialized, return true if yes false if not initialized
         //Makes sure the database is initialized (started)
         //call this before making any other calls to the database
         public static async Task<Result<bool>> EnsureInitialized()
         {
             try { await Db.Initialize(); return Result<bool>.Success(true); }
-            catch (Exception e) { return Result<bool>.Fail(ErrorCode.Db, e.Message); }
+            catch (Exception e) { return Result<bool>.Fail(ErrorCode.DbError, e.Message); }
         }
 
         // --- MenuEntry (Menu food item)
@@ -46,7 +22,21 @@ namespace Restaurant_Manager.Data
         public static async Task<Result<List<MenuEntry>>> GetMenu()
         {
             try { return Result<List<MenuEntry>>.Success(await Db.GetMenu()); }
-            catch (Exception e) { return Result<List<MenuEntry>>.Fail(ErrorCode.Db, e.Message); }
+            catch (Exception e) { return Result<List<MenuEntry>>.Fail(ErrorCode.DbError, e.Message); }
+        }
+        //return a single menu item by its id if found, exception is thrown if not found
+        public static async Task<Result<MenuEntry>> GetMenuItemById(int id)
+        {
+            try
+            {
+                var i = await Db.GetMenuItemById(id);
+                return i is null ?
+                    Result<MenuEntry>.Fail(ErrorCode.NotFound, "Not Found!") : Result<MenuEntry>.Success(i);
+            }
+            catch (Exception e)
+            {
+                return Result<MenuEntry>.Fail(ErrorCode.DbError, e.Message);
+            }
         }
         // call this with a MenuEntry Object to save it as a new menu item
         public static async Task<Result<MenuEntry>> SaveMenuEntry(MenuEntry m)
@@ -56,10 +46,10 @@ namespace Restaurant_Manager.Data
                 await Db.SaveMenuEntry(m);
                 return Result<MenuEntry>.Success(m);
             }
-            catch (ArgumentException ex) { return Result<MenuEntry>.Fail(ErrorCode.Invalid, ex.Message); }
+            catch (ArgumentException ex) { return Result<MenuEntry>.Fail(ErrorCode.InvalidRequest, ex.Message); }
             catch (InvalidOperationException ex) when (ex.Message.Contains("not found", StringComparison.OrdinalIgnoreCase))
             { return Result<MenuEntry>.Fail(ErrorCode.NotFound, ex.Message); }
-            catch (Exception ex) { return Result<MenuEntry>.Fail(ErrorCode.Db, ex.Message); }
+            catch (Exception ex) { return Result<MenuEntry>.Fail(ErrorCode.DbError, ex.Message); }
         }
         //call this to delete a food from the menu
         //if you dont use it its fine, but its here just in case
@@ -67,7 +57,7 @@ namespace Restaurant_Manager.Data
         {
             try { var n = await Db.DeleteMenuEntry(id); return Result<int>.Success(n); }
             catch (InvalidOperationException ex) { return Result<int>.Fail(ErrorCode.NotFound, ex.Message); }
-            catch (Exception ex) { return Result<int>.Fail(ErrorCode.Db, ex.Message); }
+            catch (Exception ex) { return Result<int>.Fail(ErrorCode.DbError, ex.Message); }
         }
         // ---------- Tables ---------- Add,Delete, Update,Read
 
@@ -77,7 +67,7 @@ namespace Restaurant_Manager.Data
         public static async Task<Result<List<Table>>> GetAllTables()
         {
             try { return Result<List<Table>>.Success(await Db.GetAllTables()); }
-            catch (Exception ex) { return Result<List<Table>>.Fail(ErrorCode.Db, ex.Message); }
+            catch (Exception ex) { return Result<List<Table>>.Fail(ErrorCode.DbError, ex.Message); }
         }
         //get all available tables for booking
         //give it a start time and a duration and a table capacity and it will look if any tables are avialable
@@ -91,8 +81,8 @@ namespace Restaurant_Manager.Data
                 var list = await Db.GetAvailableTablesAsync(startLocal, duration, minCapacity);
                 return Result<List<Table>>.Success(list);
             }
-            catch (ArgumentException ex) { return Result<List<Table>>.Fail(ErrorCode.Invalid, ex.Message); }
-            catch (Exception ex) { return Result<List<Table>>.Fail(ErrorCode.Db, ex.Message); }
+            catch (ArgumentException ex) { return Result<List<Table>>.Fail(ErrorCode.InvalidRequest, ex.Message); }
+            catch (Exception ex) { return Result<List<Table>>.Fail(ErrorCode.DbError, ex.Message); }
         }
 
         // ---------- Reservations ----------
@@ -112,17 +102,17 @@ namespace Restaurant_Manager.Data
                 return Result<Reservation>.Success(r);
             }
             //incase of invalidarguments
-            catch (ArgumentException ex) { return Result<Reservation>.Fail(ErrorCode.Invalid, ex.Message); }
+            catch (ArgumentException ex) { return Result<Reservation>.Fail(ErrorCode.InvalidRequest, ex.Message); }
             //incase a table was not found or a reservation being already booked
             //these three catches will be returned, the reservation is checked for these errors in the CreateReservationAsync method in Data/Db.cs
             catch (InvalidOperationException ex) when (ex.Message.Contains("Table not found", StringComparison.OrdinalIgnoreCase))
             { return Result<Reservation>.Fail(ErrorCode.NotFound, ex.Message); }
             catch (InvalidOperationException ex) when (ex.Message.Contains("exceeds capacity", StringComparison.OrdinalIgnoreCase))
-            { return Result<Reservation>.Fail(ErrorCode.Invalid, ex.Message); }
+            { return Result<Reservation>.Fail(ErrorCode.InvalidRequest, ex.Message); }
             catch (InvalidOperationException ex) when (ex.Message.Contains("already booked", StringComparison.OrdinalIgnoreCase))
-            { return Result<Reservation>.Fail(ErrorCode.Conflict, ex.Message); }
+            { return Result<Reservation>.Fail(ErrorCode.ConflictError, ex.Message); }
             //in case of an exception that does not match any of the previous cases a generic exception is returned with a message
-            catch (Exception ex) { return Result<Reservation>.Fail(ErrorCode.Db, ex.Message); }
+            catch (Exception ex) { return Result<Reservation>.Fail(ErrorCode.DbError, ex.Message); }
         }
 
         //CALL THIS TO UPDATE "CHANGE" A RESERVATION
@@ -135,25 +125,25 @@ namespace Restaurant_Manager.Data
                 await Db.UpdateReservationAsync(r, checkConflicts);
                 return Result<Reservation>.Success(r);
             }
-            catch (ArgumentException ex) { return Result<Reservation>.Fail(ErrorCode.Invalid, ex.Message); }
+            catch (ArgumentException ex) { return Result<Reservation>.Fail(ErrorCode.InvalidRequest, ex.Message); }
             catch (InvalidOperationException ex) when (ex.Message.Contains("already booked", StringComparison.OrdinalIgnoreCase))
-            { return Result<Reservation>.Fail(ErrorCode.Conflict, ex.Message); }
+            { return Result<Reservation>.Fail(ErrorCode.ConflictError, ex.Message); }
             catch (InvalidOperationException ex) when (ex.Message.Contains("not found", StringComparison.OrdinalIgnoreCase))
             { return Result<Reservation>.Fail(ErrorCode.NotFound, ex.Message); }
-            catch (Exception ex) { return Result<Reservation>.Fail(ErrorCode.Db, ex.Message); }
+            catch (Exception ex) { return Result<Reservation>.Fail(ErrorCode.DbError, ex.Message); }
         }
         //CALL THIS TO CANCEL "DELETE" A RESERVATION
         public static async Task<Result<int>> CancelReservation(int id)
         {
             try { var n = await Db.CancelReservationAsync(id); return Result<int>.Success(n); }
             catch (InvalidOperationException ex) { return Result<int>.Fail(ErrorCode.NotFound, ex.Message); }
-            catch (Exception ex) { return Result<int>.Fail(ErrorCode.Db, ex.Message); }
+            catch (Exception ex) { return Result<int>.Fail(ErrorCode.DbError, ex.Message); }
         }
         //get all reservations for a given day
         public static async Task<Result<List<Reservation>>> GetReservationsForDay(DateTime dayLocal)
         {
             try { return Result<List<Reservation>>.Success(await Db.GetReservationsForDayAsync(dayLocal)); }
-            catch (Exception ex) { return Result<List<Reservation>>.Fail(ErrorCode.Db, ex.Message); }
+            catch (Exception ex) { return Result<List<Reservation>>.Fail(ErrorCode.DbError, ex.Message); }
         }
 
         // ---------- Employees ----------
@@ -163,8 +153,9 @@ namespace Restaurant_Manager.Data
         public static async Task<Result<List<Employee>>> GetEmployees()
         {
             try { return Result<List<Employee>>.Success(await Db.GetEmployeesAsync()); }
-            catch (Exception ex) { return Result<List<Employee>>.Fail(ErrorCode.Db, ex.Message); }
+            catch (Exception ex) { return Result<List<Employee>>.Fail(ErrorCode.DbError, ex.Message); }
         }
+        
         //Create a new employee
         //this method excepts to receive an employee object to save it to database
         //in case of an error,
@@ -172,8 +163,16 @@ namespace Restaurant_Manager.Data
         public static async Task<Result<Employee>> SaveEmployee(Employee e)
         {
             try { await Db.SaveEmployeeAsync(e); return Result<Employee>.Success(e); }
-            catch (ArgumentException ex) { return Result<Employee>.Fail(ErrorCode.Invalid, ex.Message); }
-            catch (Exception ex) { return Result<Employee>.Fail(ErrorCode.Db, ex.Message); }
+            catch (ArgumentException ex) { return Result<Employee>.Fail(ErrorCode.InvalidRequest, ex.Message); }
+            catch (Exception ex) { return Result<Employee>.Fail(ErrorCode.DbError, ex.Message); }
+        }
+        //takes an employee object and attempts to delete it, returns an integer value of 1 if successful
+        //returns a Result class instance with exception message if failed
+        public static async Task<Result<int>> DeleteEmployee(Employee e)
+        {
+            try { var n = await Db.DeleteEmployee(e); return Result<int>.Success(n); }
+            catch (InvalidOperationException ex) { return Result<int>.Fail(ErrorCode.InvalidRequest, ex.Message); }
+            catch (Exception ex) { return Result<int>.Fail(ErrorCode.DbError, ex.Message); }
         }
     }
 }

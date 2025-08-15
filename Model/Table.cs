@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Restaurant_Manager.Model.Shared;
 using SQLite;
-namespace Restaurant_Manager.Model
+namespace Restaurant_Manager.Model 
 {
-    public class Table
+    public class Table : BaseModel
     {
 
-        [PrimaryKey, AutoIncrement] public int Id { get; set; }
 
         public short TableNumber { get; set; }
 

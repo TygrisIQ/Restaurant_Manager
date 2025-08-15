@@ -117,7 +117,7 @@ namespace Restaurant_Manager.Data
             _initialized = true;
         }
 
-        // MENU ITEM CRUD , EACH ITEM CHECKS IF DB IS INITIALIZED FIRST
+        // -------------- MENU ITEM CRUD , EACH ITEM CHECKS IF DB IS INITIALIZED FIRST
 
         //get all menu items
         public static async Task<List<MenuEntry>> GetMenu()
@@ -137,7 +137,13 @@ namespace Restaurant_Manager.Data
             return await _conn!.DeleteAsync(m);
         }
 
-        // TABLE CRUD. SAME PROCEDURE AS MENUENTRY CRUD
+        public static async Task<MenuEntry> GetMenuItemById(int id)
+        {
+            await Initialize();
+            return await _conn!.FindAsync<MenuEntry>(id);
+        }
+
+        // --------------- TABLE . SAME PROCEDURE AS MENUENTRY CRUD
 
         //Get ALl tables
         public static async Task<List<Table>> GetAllTables()
@@ -250,5 +256,6 @@ namespace Restaurant_Manager.Data
         {
             await Initialize(); return e.Id == 0 ? throw new InvalidOperationException("No employee found!") : await _conn!.DeleteAsync(e);
         }
+       
     }
 }

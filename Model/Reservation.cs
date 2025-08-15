@@ -1,12 +1,12 @@
 ﻿using Restaurant_Manager.Model.Enums;
+using Restaurant_Manager.Model.Shared;
 using SQLite;
 namespace Restaurant_Manager.Model
 {
-    public class Reservation
+    public class Reservation : BaseModel
     {
         //models a reservation object
         //uses table id to refer to a specific table
-        [PrimaryKey, AutoIncrement] public int Id { get; set; }
 
         [NotNull] public int TableId { get; set; }
         [NotNull] public string ReservationName { get; set; } = "";

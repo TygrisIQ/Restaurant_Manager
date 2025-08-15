@@ -1,6 +1,37 @@
 ﻿@page "/"
+@using Restaurant_Manager.Data
+@using Restaurant_Manager.Model
 
 <h1>Hello, world!</h1>
 
 
-Welcome to your new app.
+@if (menuItems is null){
+    <p>loading items.....</p>
+
+}
+else{
+
+    <ul>
+        @foreach(var item in menuItems)
+        {
+            <li>@item.Name - @item.Price.ToString("C")</li>
+        }
+    </ul>
+}
+@code{
+    List<MenuEntry>? menuItems;
+
+    protected override async Task OnInitializedAsync(){ 
+
+        var result = await DatabaseApi.GetMenu();
+        if (result.Ok)
+        {
+            menuItems = result.Value!;
+        }
+        else
+        {
+            menuItems = new List<MenuEntry>();
+        }
+    }
+
+}
