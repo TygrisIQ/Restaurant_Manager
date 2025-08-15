@@ -19,7 +19,7 @@ namespace Restaurant_Manager.Data
     {
         //RESET DATABASE OF EVERY RUN FLAG; USE THIS WHEN YOU WANT TO START WITH A FRESH DATABASE 
         //
-        public static bool ResetDbOnStart { get; set; } = false;
+        public static bool ResetDbOnStart { get; set; } = true;
         //The Connection object and the initialized boolean are global so methods are able to check of connection/initialization status
         static SQLiteAsyncConnection? _conn;
         static bool _initialized;
@@ -36,6 +36,14 @@ namespace Restaurant_Manager.Data
             new MenuEntry { Name="Chocolate Cake", Price=6.0m, IsAvailable=true, Type=MenuEntryType.Dessert, Description="Chocolate!"},
             new MenuEntry { Name="Lamb on rice", Price=17.0m, IsAvailable=true, Type=MenuEntryType.MainDish, Description="Best Seller Dish" },
             new MenuEntry { Name="Fatoush", Price=11.0m, IsAvailable=true, Type=MenuEntryType.Appetizer, Description="A lebanese appetizer dish" },
+            new MenuEntry { Name="Greek Salad", Price=9.5m, IsAvailable=true, Type=MenuEntryType.Appetizer, Description="Fresh cucumbers, tomatoes, feta cheese, and olives" },
+            new MenuEntry { Name="Tiramisu", Price=7.0m, IsAvailable=true, Type=MenuEntryType.Dessert, Description="Classic Italian dessert with coffee-soaked ladyfingers" },
+            new MenuEntry { Name="Orange Juice", Price=3.5m, IsAvailable=true, Type=MenuEntryType.Drink, Description="Freshly squeezed oranges" },
+            new MenuEntry { Name="Beef Burger", Price=13.0m, IsAvailable=true, Type=MenuEntryType.MainDish, Description="Juicy beef patty with lettuce, tomato, and cheese" },
+            new MenuEntry { Name="French Fries", Price=4.5m, IsAvailable=true, Type=MenuEntryType.Appetizer, Description="Crispy golden potato fries" },
+            new MenuEntry { Name="Iced Tea", Price=2.5m, IsAvailable=true, Type=MenuEntryType.Drink, Description="Chilled and refreshing with a hint of lemon" },
+            new MenuEntry { Name="Mango Smoothie", Price=4.0m, IsAvailable=true, Type=MenuEntryType.Drink, Description="Blended mangoes with yogurt and honey" },
+            new MenuEntry { Name="Baklava", Price=5.5m, IsAvailable=true, Type=MenuEntryType.Dessert, Description="Layers of filo pastry filled with nuts and sweet syrup" }
         };
         static readonly Employee[] EmployeesList = new[]
         {

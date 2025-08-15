@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\tyty\\source\\repos\\Restaurant_Manager\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8FD1BF80-D835-4155-925F-DDD1A4B70121}|Restaurant_Manager.csproj|c:\\users\\tyty\\source\\repos\\restaurant_manager\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8FD1BF80-D835-4155-925F-DDD1A4B70121}|Restaurant_Manager.csproj|solutionrelative:components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8FD1BF80-D835-4155-925F-DDD1A4B70121}|Restaurant_Manager.csproj|c:\\users\\tyty\\source\\repos\\restaurant_manager\\data\\databaseapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8FD1BF80-D835-4155-925F-DDD1A4B70121}|Restaurant_Manager.csproj|solutionrelative:data\\databaseapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8FD1BF80-D835-4155-925F-DDD1A4B70121}|Restaurant_Manager.csproj|c:\\users\\tyty\\source\\repos\\restaurant_manager\\data\\db.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8FD1BF80-D835-4155-925F-DDD1A4B70121}|Restaurant_Manager.csproj|solutionrelative:data\\db.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8FD1BF80-D835-4155-925F-DDD1A4B70121}|Restaurant_Manager.csproj|c:\\users\\tyty\\source\\repos\\restaurant_manager\\components\\pages\\reservations.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8FD1BF80-D835-4155-925F-DDD1A4B70121}|Restaurant_Manager.csproj|solutionrelative:components\\pages\\reservations.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8FD1BF80-D835-4155-925F-DDD1A4B70121}|Restaurant_Manager.csproj|c:\\users\\tyty\\source\\repos\\restaurant_manager\\data\\result.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8FD1BF80-D835-4155-925F-DDD1A4B70121}|Restaurant_Manager.csproj|solutionrelative:data\\result.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8FD1BF80-D835-4155-925F-DDD1A4B70121}|Restaurant_Manager.csproj|c:\\users\\tyty\\source\\repos\\restaurant_manager\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8FD1BF80-D835-4155-925F-DDD1A4B70121}|Restaurant_Manager.csproj|solutionrelative:components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8FD1BF80-D835-4155-925F-DDD1A4B70121}|Restaurant_Manager.csproj|c:\\users\\tyty\\source\\repos\\restaurant_manager\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
       "RelativeMoniker": "D:0:0:{8FD1BF80-D835-4155-925F-DDD1A4B70121}|Restaurant_Manager.csproj|solutionrelative:readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FD1BF80-D835-4155-925F-DDD1A4B70121}|Restaurant_Manager.csproj|c:\\users\\tyty\\source\\repos\\restaurant_manager\\data\\result.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FD1BF80-D835-4155-925F-DDD1A4B70121}|Restaurant_Manager.csproj|solutionrelative:data\\result.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8FD1BF80-D835-4155-925F-DDD1A4B70121}|Restaurant_Manager.csproj|c:\\users\\tyty\\source\\repos\\restaurant_manager\\model\\enums\\reservationstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -78,37 +78,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Home.razor",
-              "DocumentMoniker": "C:\\Users\\tyty\\source\\repos\\Restaurant_Manager\\Components\\Pages\\Home.razor",
-              "RelativeDocumentMoniker": "Components\\Pages\\Home.razor",
-              "ToolTip": "C:\\Users\\tyty\\source\\repos\\Restaurant_Manager\\Components\\Pages\\Home.razor",
-              "RelativeToolTip": "Components\\Pages\\Home.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-15T04:34:50.12Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Result.cs",
-              "DocumentMoniker": "C:\\Users\\tyty\\source\\repos\\Restaurant_Manager\\Data\\Result.cs",
-              "RelativeDocumentMoniker": "Data\\Result.cs",
-              "ToolTip": "C:\\Users\\tyty\\source\\repos\\Restaurant_Manager\\Data\\Result.cs",
-              "RelativeToolTip": "Data\\Result.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-15T03:57:39.629Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Reservations.razor",
+              "DocumentMoniker": "C:\\Users\\tyty\\source\\repos\\Restaurant_Manager\\Components\\Pages\\Reservations.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\Reservations.razor",
+              "ToolTip": "C:\\Users\\tyty\\source\\repos\\Restaurant_Manager\\Components\\Pages\\Reservations.razor",
+              "RelativeToolTip": "Components\\Pages\\Reservations.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-15T05:19:20.802Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "DatabaseApi.cs",
               "DocumentMoniker": "C:\\Users\\tyty\\source\\repos\\Restaurant_Manager\\Data\\DatabaseApi.cs",
               "RelativeDocumentMoniker": "Data\\DatabaseApi.cs",
@@ -121,19 +108,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Db.cs",
-              "DocumentMoniker": "C:\\Users\\tyty\\source\\repos\\Restaurant_Manager\\Data\\Db.cs",
-              "RelativeDocumentMoniker": "Data\\Db.cs",
-              "ToolTip": "C:\\Users\\tyty\\source\\repos\\Restaurant_Manager\\Data\\Db.cs",
-              "RelativeToolTip": "Data\\Db.cs",
-              "ViewState": "AgIAAIQAAAAAAAAAAAAQwJUAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-13T07:37:58.002Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 11,
               "Title": "Table.cs",
               "DocumentMoniker": "C:\\Users\\tyty\\source\\repos\\Restaurant_Manager\\Model\\Table.cs",
@@ -142,8 +116,45 @@
               "RelativeToolTip": "Model\\Table.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-15T03:38:23.744Z",
+              "WhenOpened": "2025-08-15T03:38:23.744Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "README.md",
+              "DocumentMoniker": "C:\\Users\\tyty\\source\\repos\\Restaurant_Manager\\README.md",
+              "RelativeDocumentMoniker": "README.md",
+              "ToolTip": "C:\\Users\\tyty\\source\\repos\\Restaurant_Manager\\README.md",
+              "RelativeToolTip": "README.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-08-13T07:48:24.598Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Home.razor",
+              "DocumentMoniker": "C:\\Users\\tyty\\source\\repos\\Restaurant_Manager\\Components\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\Home.razor",
+              "ToolTip": "C:\\Users\\tyty\\source\\repos\\Restaurant_Manager\\Components\\Pages\\Home.razor",
+              "RelativeToolTip": "Components\\Pages\\Home.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-15T04:34:50.12Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Result.cs",
+              "DocumentMoniker": "C:\\Users\\tyty\\source\\repos\\Restaurant_Manager\\Data\\Result.cs",
+              "RelativeDocumentMoniker": "Data\\Result.cs",
+              "ToolTip": "C:\\Users\\tyty\\source\\repos\\Restaurant_Manager\\Data\\Result.cs",
+              "RelativeToolTip": "Data\\Result.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-15T03:57:39.629Z"
             },
             {
               "$type": "Document",
@@ -155,8 +166,7 @@
               "RelativeToolTip": "Model\\Employee.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-13T07:50:59.944Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-13T07:50:59.944Z"
             },
             {
               "$type": "Document",
@@ -168,8 +178,7 @@
               "RelativeToolTip": "Model\\MenuEntry.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-13T07:51:56.897Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-13T07:51:56.897Z"
             },
             {
               "$type": "Document",
@@ -181,8 +190,7 @@
               "RelativeToolTip": "Model\\Shared\\BaseModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-15T03:36:07.211Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-15T03:36:07.211Z"
             },
             {
               "$type": "Document",
@@ -194,8 +202,7 @@
               "RelativeToolTip": "Model\\Reservation.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-13T07:52:39.928Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-13T07:52:39.928Z"
             },
             {
               "$type": "Document",
@@ -207,8 +214,7 @@
               "RelativeToolTip": "Model\\Enums\\ReservationStatus.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-13T07:50:29.655Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-13T07:50:29.655Z"
             },
             {
               "$type": "Document",
@@ -220,21 +226,7 @@
               "RelativeToolTip": "Model\\Enums\\PaymentType.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-13T07:50:04.96Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "README.md",
-              "DocumentMoniker": "C:\\Users\\tyty\\source\\repos\\Restaurant_Manager\\README.md",
-              "RelativeDocumentMoniker": "README.md",
-              "ToolTip": "C:\\Users\\tyty\\source\\repos\\Restaurant_Manager\\README.md",
-              "RelativeToolTip": "README.md",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2025-08-13T07:48:24.598Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-13T07:50:04.96Z"
             },
             {
               "$type": "Document",
@@ -246,8 +238,7 @@
               "RelativeToolTip": "Model\\Shared\\IHasName.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-15T03:39:31.485Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-15T03:39:31.485Z"
             },
             {
               "$type": "Document",
@@ -259,8 +250,7 @@
               "RelativeToolTip": "Utility\\DatabaseUtility.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-15T03:45:51.435Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-15T03:45:51.435Z"
             },
             {
               "$type": "Document",
@@ -284,8 +274,7 @@
               "RelativeToolTip": "MainPage.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-08-13T07:45:50.055Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-13T07:45:50.055Z"
             },
             {
               "$type": "Document",

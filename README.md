@@ -10,3 +10,6 @@
 ### Uses SQLite and MAUI
 
 **uses MAUI for the ui and sqlite for presistence**
+
+
+![alt test](ss.jpg)
